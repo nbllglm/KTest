@@ -1,8 +1,8 @@
-package gz.example.ktest
+package gz.example.ktest.kt
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import gz.example.ktest.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
