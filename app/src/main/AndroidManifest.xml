@@ -3,21 +3,32 @@
     package="gz.example.ktest">
 
     <application
+        android:name=".java.GzApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".java.Activity.TestA_Activity">
+        <activity
+            android:name=".java.Activity.TestA_Activity"
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".java.Activity.TestB_Activity"/>
-        <activity android:name=".kt.MainActivity"/>
+        <activity
+            android:name=".java.Activity.TestB_Activity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".java.Activity.TestD_Activity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".java.Activity.TestC_Activity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
     </application>
 
 </manifest>

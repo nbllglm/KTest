@@ -15,7 +15,7 @@ import com.orhanobut.logger.Logger;
 
 import gz.example.ktest.R;
 
-public class TestA_Activity extends Activity implements View.OnClickListener {
+public class TestD_Activity extends Activity implements View.OnClickListener {
     private ConstraintLayout constraintLayout;
     TextView tvName;
     TextView tvJumpA;
